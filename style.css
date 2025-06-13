@@ -8,7 +8,7 @@ body {
   background-color: #fdbf00; 
   background-image: url('https://album.mediaset.es/eimg/2022/07/05/los-jardines-de-lavanda-de-brihuega-en-guadalajara_6437.jpg');
   background-size: cover;
-  background-position: center;
+  background-position: top center;
 }
 .card {
   width: 640px;
