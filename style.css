@@ -65,11 +65,11 @@ body {
   transform: rotateX(0deg);
 }
 .front {
-  background-color: #ffffff;
+  background-color: #ffd1dc;
 }
 .back {
   transform: rotateY(180deg);
-  background: linear-gradient(to left, #e7e7e7, #ffffff 30%);
+  background: linear-gradient(to left, #e7e7e7, #ffd1dc 30%);
 }
 .cake {
   width: 100%;
