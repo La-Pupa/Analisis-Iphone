@@ -6,5 +6,38 @@
 }
 body{
   background-color: #fbdf;
-
+}
+.card{
+  border:px solid white;
+  width: 640px;
+  height: 400px; 
+  positiion: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-perspective: 1200px;
+  perspective: 1200px;
+}
+.outside, 
+.inside {
+  border: 1px solid black;
+  height: 100%;
+  width: 50%;
+  position: absolute;
+}
+.inside {
+  left: 50.1%;
+}
+.outside {
+}
+.front {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform: rotatex(0deg);
+  background-color: #ffffff;
 }
