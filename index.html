@@ -3,37 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Feliz Cumpleaños</title>
+    <title>Felicidades</title>
     <style>
         body {
-            background-color: #ffebcd; /* Color cálido */
-            font-family: Arial, sans-serif;
-            text-align: center;
+            /* Fondo de campo de flores */
+            background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1500&q=80');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            min-height: 100vh;
         }
         .carta {
             max-width: 600px;
-            margin: 50px auto;
-            padding: 20px;
-            border-radius: 10px;
-            background-color: #fff;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+            margin: 60px auto;
+            background: rgba(255, 255, 255, 0.90);
+            border-radius: 18px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+            padding: 36px 32px 32px 32px;
+            position: relative;
         }
-        img {
-            max-width: 150px;
+        .titulo {
+            color: #f4b400;
+            font-size: 2.6em;
+            letter-spacing: 2px;
+            margin-bottom: 12px;
+            font-family: 'Pacifico', cursive, Arial, sans-serif;
+            text-shadow: 1px 2px 8px #ffffe0;
+        }
+        .flores {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .flores img {
+            width: 68px;
+            height: 68px;
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(255, 220, 120, 0.17);
+            object-fit: cover;
+            border: 2px solid #ffe6a1;
+            background: #fffbe9;
+        }
+        .mensaje {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 26px;
+        }
+        .gato {
+            display: block;
+            margin: 0 auto 0 0;
+            width: 80px;
+            border-radius: 18px;
+            box-shadow: 0 2px 10px rgba(200,180,255,0.16);
+        }
+        .firma {
+            margin-top: 30px;
+            font-family: 'Pacifico', cursive, Arial, sans-serif;
+            color: #e57373;
+            font-size: 1.1em;
+        }
+        @media (max-width: 700px) {
+            .carta { padding: 20px 5vw; }
+            .flores img { width: 48px; height: 48px; }
+            .gato { width: 60px; }
         }
     </style>
+    <!-- Fuente manuscrita para la carta -->
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="carta">
-        <h1>¡Feliz Cumpleaños!</h1>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Grusskarte.jpg" alt="Tarjeta">
-        <p>Querida amiga,</p>
-        <p>Que tu día esté lleno de alegría, amor y mucha felicidad. Eres una persona maravillosa y mereces lo mejor.</p>
-        <p>Te deseo un año lleno de grandes momentos.</p>
-        <p>¡Con cariño y admiración!</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Sunflower_sky_backdrop.jpg" alt="Girasol">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Rosa_rosa_%28Pink_Rose%29.jpg" alt="Rosa">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/Cat_eyes.jpg" alt="Gato">
+        <div class="flores">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Sunflower_sky_backdrop.jpg" alt="Girasol">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/Rosa_rosa_%28Pink_Rose%29.jpg" alt="Rosa">
+        </div>
+        <h1 class="titulo">¡Felicidades!</h1>
+        <div class="mensaje">
+            Querida amiga,<br><br>
+            Hoy es un día para celebrar tu vida, tu alegría y la luz que compartes con todos. <br>
+            Que este nuevo año venga lleno de aventuras, sonrisas y momentos llenos de amor.<br><br>
+            Espero que siempre tengas motivos para sonreír como un campo de flores bajo el sol. <br>
+            Recuerda que eres tan especial como un girasol, tan hermosa como una rosa, y tan adorable como un gatito.<br><br>
+            ¡Te deseo lo mejor hoy y siempre!
+        </div>
+        <img class="gato" src="https://upload.wikimedia.org/wikipedia/commons/2/27/Cat_eyes.jpg" alt="Gato tierno">
+        <div class="firma">
+            Con cariño,<br>
+            Tu [nombre o apodo]
+        </div>
     </div>
 </body>
 </html>
